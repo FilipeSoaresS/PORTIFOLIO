@@ -1,4 +1,4 @@
-import { FaReact, FaJs } from 'react-icons/fa';
+import { FaReact, FaJs, FaHtml5 } from 'react-icons/fa';
 
 function Projetos () {
     return (
@@ -8,6 +8,16 @@ function Projetos () {
             <p>
               <a className="projetos" href="https://pokedex-kappa-five.vercel.app">
                 <FaJs/>  Pokedex
+              </a>
+            </p>
+            <p>
+              <a className="projetos" href="https://rick-and-morty-memory-game-icbb1akog-filipesoaress.vercel.app">
+                <FaJs/> Jogo da Memória
+              </a>
+            </p>
+            <p>
+              <a className="projetos" href="https://alura-midi-dun-rho.vercel.app">
+                <FaJs/> AluraMidi
               </a>
             </p>
             <p>
@@ -21,13 +31,8 @@ function Projetos () {
               </a>
             </p>
             <p>
-              <a className="projetos" href="https://rick-and-morty-memory-game-icbb1akog-filipesoaress.vercel.app">
-                <FaJs/> Jogo da Memória
-              </a>
-            </p>
-            <p>
-              <a className="projetos" href="https://alura-midi-dun-rho.vercel.app">
-                <FaJs/> AluraMidi
+              <a className="projetos" href="https://barberaria-alura.vercel.app">
+                <FaHtml5/> Barbearia Alura
               </a>
             </p>
           </div>
