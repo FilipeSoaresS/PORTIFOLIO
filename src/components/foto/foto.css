@@ -1,0 +1,127 @@
+.foto-container {
+    margin-right: 33%;
+    margin-left: 33%;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    animation: fadeIn 2s ease-in-out ; 
+    position: static;
+}
+
+.foto-container.move {
+    margin-left: -1.5%;
+    transition: all 2s ease-in-out;
+}
+
+.click-text{
+    margin: 32% auto 0 10.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+    animation: fadeIn 5s ease-in-out ; 
+}
+
+.click-text:hover{
+    transition: all 1.5s ease;
+    transform: scale(1.15);
+}
+
+.foto {
+    max-width: 25%;
+    margin: 4% 0 0 5%;
+    border-radius: 50%;
+    border: 0.5px solid #6a6a6a;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    cursor: pointer;
+}
+
+@media (max-width: 570px) {
+
+    .foto-container{
+        align-items: center;
+        margin: 0 auto 0 17%;
+    }
+   
+    .foto {
+        margin-top: 24%;
+        position: absolute;
+        min-width: auto;
+        max-width: 60%;
+        align-items: center;
+    }
+      
+    .foto-container.move {
+        animation: shrink 1s ease-in-out forwards, position 3s ease-in-out forwards;
+        transform: scale(1.1);
+        position: static;
+        margin-left: 20%;
+    }
+
+    .click-text{
+        position: absolute;
+        top: 50%;
+        margin-top: 35%;
+        margin-left: 27%;
+        transform: translate(-30%, -30%);
+    }
+      
+      @keyframes shrink {
+        0% {
+            position: static;
+            min-width: auto;
+            max-width: 80%;
+            width: 100%;        
+        }
+        50%{
+            transform: 50%;
+        }
+
+        100% {
+          transform: scale(1);
+        }
+
+      }
+      
+      @keyframes position {
+        0% {
+            position: static;
+            min-width: auto;
+            max-width: 100%;
+        }
+        50% {
+            position: static;
+        }
+
+        100% {
+            width: 32%;          
+            margin-left: 12%;
+        }
+
+      }
+  }
+  
+  @media screen and (min-width: 571px) and (max-width: 1135px)  {
+
+    .foto {
+        position: absolute;
+        min-width: 25%;
+        align-items: center;
+    }
+      
+    .foto-container.move {
+        animation: shrink 1s ease-in-out forwards;
+        position: static;
+    }
+
+    .click-text{
+        position: absolute;
+        margin-left: 14%;
+        align-items: center;
+        transform: translate(-30%, -30%);
+    }
+  }
