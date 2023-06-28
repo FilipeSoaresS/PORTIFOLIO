@@ -1,8 +1,8 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope, FaDownload } from 'react-icons/fa';
 
 function Contato() {
-  const phoneNumber = '5548996755924'; // Número de telefone para o WhatsApp
-  const emailAddress = 'filipesoaresilva@gmail.com'; // Endereço de email
+  const phoneNumber = '5548996755924';
+  const emailAddress = 'filipesoaresilva@gmail.com';
 
   const openWhatsApp = () => {
     const message = 'Olá, estou entrando em contato pelo WhatsApp';
@@ -26,6 +26,13 @@ function Contato() {
       <p className='contato' onClick={openWhatsApp}>
         Telefone/WhatsApp: 48-996755924
         <FaWhatsapp className="icones" />
+        
+      </p>
+      <p>
+        <a className='contato' href="https://drive.google.com/file/d/1NHaaIjL30exB5fWpFG1o1gCwEKjJxVa8/view" download>
+           Clique para baixar meu curriculo 
+          <FaDownload className="icones" /> 
+        </a>
       </p>
       <p className='contato' style={{ margin: '20px', fontWeight: 'bold', textAlign: 'center' }}>Minhas redes:</p>
       <div className="icone-container">

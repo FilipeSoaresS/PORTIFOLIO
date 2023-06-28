@@ -21,6 +21,7 @@ function Home() {
   const handlePhotoClick = () => {
     setShowPhoto(true);
     setShowText(false);
+    handleButtonClick('Sobre');
   };
 
   const handleButtonClick = (buttonName) => {
@@ -68,7 +69,7 @@ function Home() {
                 <button className={buttonName === 'Contato' ? 'button button-selected' : 'button'} onClick={() => handleButtonClick('Contato')}>Contato</button>
               </Button>
             </div>
-            <div key={animationKey} className={`displayText ${showText ? 'show' : 'hide'}`}>{showText && displayText}</div>
+            <div key={animationKey} className={`displayText ${showText ? 'show' : ''}`}>{showText && displayText}</div>
           </div>
         )};
     <footer> © 2023 - Filipe Soares</footer>
