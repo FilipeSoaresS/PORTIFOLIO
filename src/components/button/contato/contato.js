@@ -29,7 +29,7 @@ function Contato() {
         
       </p>
       <p>
-        <a className='contato' href="https://drive.google.com/file/d/1NHaaIjL30exB5fWpFG1o1gCwEKjJxVa8/view" download>
+        <a className='contato' href="https://drive.google.com/drive/folders/0B0mdjZT6DXxHZFB3S3F5bzUybjg?resourcekey=0-6SVUKKDP6KQx_pN2twxoRw" download>
            Clique para baixar meu curriculo 
           <FaDownload className="icones" /> 
         </a>
