@@ -1,4 +1,4 @@
-import { FaReact, FaJs, FaHtml5 } from 'react-icons/fa';
+import { FaReact, FaJs, FaHtml5, FaVuejs } from 'react-icons/fa';
 
 function Projetos () {
     return (
@@ -33,6 +33,11 @@ function Projetos () {
             <p>
               <a className="projetos" href="https://barberaria-alura.vercel.app">
                 <FaHtml5/> Barbearia Alura
+              </a>
+            </p>
+            <p>
+              <a className="projetos" href="https://quiz-game-omega.vercel.app/">
+                <FaVuejs/> Quiz Game
               </a>
             </p>
           </div>
