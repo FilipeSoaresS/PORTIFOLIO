@@ -1,17 +1,24 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp, FaEnvelope, FaDownload } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+  FaEnvelope,
+  FaDownload,
+} from "react-icons/fa";
 
 function Contato() {
-  const phoneNumber = '5548996755924';
-  const emailAddress = 'filipesoaresilva@gmail.com';
+  const phoneNumber = "5591988675143";
+  const emailAddress = "filipesoaresilva@gmail.com";
 
   const openWhatsApp = () => {
-    const message = 'Olá, estou entrando em contato pelo WhatsApp';
+    const message = "Olá, estou entrando em contato pelo WhatsApp";
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappURL, '_blank');
+    window.open(whatsappURL, "_blank");
   };
 
   const sendEmail = () => {
-    const subject = 'Contato';
+    const subject = "Contato";
     const emailURL = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`;
     window.open(emailURL);
   };
@@ -19,22 +26,30 @@ function Contato() {
   return (
     <div>
       <h1>Fale comigo:</h1>
-      <p className='contato' onClick={sendEmail}>
+      <p className="contato" onClick={sendEmail}>
         Email: filipesoaresilva@gmail.com
         <FaEnvelope className="icones" />
       </p>
-      <p className='contato' onClick={openWhatsApp}>
-        Telefone/WhatsApp: 48-996755924
+      <p className="contato" onClick={openWhatsApp}>
+        Telefone/WhatsApp: 91-988675143
         <FaWhatsapp className="icones" />
-        
       </p>
       <p>
-        <a className='contato' href="https://drive.google.com/file/d/1-TPIoYgHuVTPJ3Nd1etrL2VXstwO6cAh/view?usp=sharing" download>
-           Clique para baixar meu curriculo 
-          <FaDownload className="icones" /> 
+        <a
+          className="contato"
+          href="https://drive.google.com/file/d/1-TPIoYgHuVTPJ3Nd1etrL2VXstwO6cAh/view?usp=sharing"
+          download
+        >
+          Clique para baixar meu curriculo
+          <FaDownload className="icones" />
         </a>
       </p>
-      <p className='contato' style={{ margin: '20px', fontWeight: 'bold', textAlign: 'center' }}>Minhas redes:</p>
+      <p
+        className="contato"
+        style={{ margin: "20px", fontWeight: "bold", textAlign: "center" }}
+      >
+        Minhas redes:
+      </p>
       <div className="icone-container">
         <a href="https://github.com/FilipeSoaresS">
           <FaGithub className="icones" />
